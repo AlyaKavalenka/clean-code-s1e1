@@ -38,7 +38,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.block-add__wrapper-task {
   display: flex;
 }
 
@@ -161,19 +161,51 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
-  display: inline-block;
-  width: 224px;
-}
-
-ul li.edit-mode label {
-  display: none;
-}
-
 /* after semantics changes */
 .block-add {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+/* After class changes */
+
+.block-add__input-task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.block-list__label-task{
+  flex-grow: 1;
+}
+
+.block-list__input-task {
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.block-list__button-edit{
+
+}
+
+.block-list__image-delete{
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.block-list__image-delete:hover {
+  transform: rotateZ(0);
+}
+
+.block-list__list-element_edit-mode input[type=text] {
+  display: inline-block;
+  width: 224px;
+}
+
+.block-list__list-element_edit-mode label {
+  display: none;
 }
