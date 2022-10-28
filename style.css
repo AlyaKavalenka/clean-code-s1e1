@@ -181,12 +181,12 @@
   flex-grow: 1;
 }
 
-.block-list__list-element_edit-mode input[type=text] {
+.block-list__list-element_edit-mode .block-list__input-task {
   display: inline-block;
   width: 224px;
 }
 
-.block-list__list-element_edit-mode label {
+.block-list__list-element_edit-mode .block-list__label-task {
   display: none;
 }
 
