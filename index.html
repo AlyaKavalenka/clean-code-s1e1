@@ -18,9 +18,10 @@
       </a>
     </div>
     <div class="wrapper-main">
-      <div id="top-section-for-adding-element-to-list"
-          class="block-add">
-        <label for="new-task">Add Item</label>
+      <div class="block-add">
+        <label for="new-task" class="block-add__label-task">
+          Add Item
+        </label>
         <div class="block-add__wrapper-task">
           <input id="new-task" class="block-add__input-task"
               type="text">
@@ -54,7 +55,10 @@
       <ul id="completed-tasks" class="block-list">
         <li class="block-list__list-element">
           <input type="checkbox" checked>
-          <label class="block-list__label-task">See the Doctor</label>
+          <label 
+              class="block-list__label-task block-list__label-task_completed">
+              See the Doctor
+          </label>
           <input type="text" class="block-list__input-task">
           <button class="block-list__button-edit">Edit</button>
           <button class="block-list__button-delete">
